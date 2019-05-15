@@ -26,7 +26,7 @@ class Form extends React.Component {
                             type="text"
                             id="inputUsername"
                             placeholder="Enter username"
-                            value={this.state.username}
+                            defaultValue={this.state.username}
                         />
                     </div>
                     <div>
@@ -36,7 +36,7 @@ class Form extends React.Component {
                             type="password"
                             id="inputPassword"
                             placeholder="Enter password"
-                            value={this.state.password}
+                            defaultValue={this.state.password}
                         />
                     </div>
                 </div>
