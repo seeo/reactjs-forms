@@ -4,13 +4,14 @@ class Form extends React.Component{
         //we create an object with key value pair of word
         this.state ={
             word: " ",
+
         }
     }
 
     //this function will set state on anything except 'xyz'
     changeHandler(event){
-        if (event.target.value != 'xyz'){
-            this.setState({ word: event.target.value });
+        if (event.target.value.length < 7){
+            this.setState({ word: event.target.value});
         }
 
         console.log("change", event.target.value);
