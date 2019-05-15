@@ -9,6 +9,7 @@ class Form extends React.Component{
 
     //this function will set state on anything except 'xyz'
     changeHandler(event){
+        //doing a validation here
         if (event.target.value.length < 7){
             this.setState({ word: event.target.value});
             event.target.className = "";

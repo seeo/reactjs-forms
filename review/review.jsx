@@ -80,7 +80,11 @@ class App extends React.Component {
     counterIncrease() {
         let newCounter = this.state.counter;
         newCounter++;
-        this.setState({ counter: newCounter });
+        this.setState(
+                        {
+                            counter: newCounter
+                        }
+                    );
     }
     render() {
         console.log('App props', this.props);
