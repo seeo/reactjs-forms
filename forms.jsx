@@ -12,8 +12,9 @@ class Form extends React.Component{
     changeHandler(event){
         if (event.target.value.length < 7){
             this.setState({ word: event.target.value});
+            event.target.className = "";
         }else{
-
+            event.target.className = "warning";
             console.log("please change to warning color", event.target.value.length);
         }
 
@@ -25,7 +26,7 @@ class Form extends React.Component{
         return(
             <div className = "item">
                 <span>{this.state.word}</span> <br/>
-                <input className = "warning"
+                <input
                 onChange={(event)=>{this.changeHandler(event);
                 }}
                 value = {this.state.word.toUpperCase()
