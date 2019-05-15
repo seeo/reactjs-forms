@@ -4,7 +4,6 @@ class Form extends React.Component{
         //we create an object with key value pair of word
         this.state ={
             word: " ",
-
         }
     }
 
