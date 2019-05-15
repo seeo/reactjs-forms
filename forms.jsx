@@ -7,8 +7,12 @@ class Form extends React.Component{
         }
     }
 
+    //this function will set state on anything except 'a'
     changeHandler(event){
-        this.setState({word: event.target.value});
+        if (event.target.value != 'a'){
+            this.setState({ word: event.target.value });
+        }
+
         console.log("change", event.target.value);
     }
 
